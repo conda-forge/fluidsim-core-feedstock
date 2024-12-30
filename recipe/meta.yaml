@@ -21,7 +21,7 @@ requirements:
     - flit-core
   run:
     - python >={{ python_min }}
-    - importlib_metadata
+    - importlib-metadata
     - fluiddyn >=0.3.2
 
 test:
