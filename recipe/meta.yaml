@@ -1,5 +1,6 @@
 {% set name = "fluidsim-core" %}
-{% set version = "0.8.4" %}
+{% set version = "0.8.5" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: fde46d3150c62dd3db32ef47aaa5dd3dd6be30307ff83517ee204b7e4935d886
+  sha256: 72d214084c6c8a50563908a3109227fa25a34f395162ba08acb61b06ff150731
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
